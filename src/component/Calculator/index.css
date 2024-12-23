@@ -1,0 +1,46 @@
+.title{
+  text-align: center;
+}
+.wrapper{
+  max-width: 500px;
+  margin-inline: auto;
+  border-radius: 4px;
+  border: 1px solid rgb(227, 216, 216);
+  padding: 24px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.input-control{
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-direction: column;
+}
+  .input-control input{
+    border: 1px solid #2DD179;
+    width: 80%;
+    border-radius: 4px;
+    height: 40px;
+  }
+
+  button{
+    outline: none;
+    background-color: #2DD179;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.25s ease-in-out;
+  }
+  button:hover{
+    opacity: 0.8;
+  }
+
+  h4{
+    margin: 24px 0 0;
+  }
+
+  
+  
