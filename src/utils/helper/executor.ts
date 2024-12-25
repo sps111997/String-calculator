@@ -6,14 +6,20 @@ export const getNumberFromString = (string: string) => {
 
 export const sumCalculatorOnlyPositiveNumber = (numberArray: number[]) => {
   let sum = 0;
+  const negativeNumber = [];
   numberArray.forEach((val) => {
     if (val < 0) {
-      throw new Error("Only positive number valid");
+      negativeNumber.push(val);
     } else {
       sum += val;
     }
   });
-  return sum;
+  if(negativeNumber.length){
+    throw new Error(`negatives numbers are  not allowed: ${negativeNumber.join(', ')}`);
+  }
+  else{
+    return sum;
+  }
 };
 
 export const stringCalculator = (string: string):number => {

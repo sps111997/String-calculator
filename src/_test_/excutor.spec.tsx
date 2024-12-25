@@ -11,7 +11,10 @@ describe(sumCalculatorOnlyPositiveNumber,()=>{
         expect(result).toBe(6);
     })
     it('with negative number',()=>{
-        expect(() => sumCalculatorOnlyPositiveNumber([1, 2, -3])).toThrow('Only positive number valid');
+        expect(() => sumCalculatorOnlyPositiveNumber([1, 2, -3])).toThrow('negatives numbers are  not allowed: -3');
+    })
+    it('with multiple negative number',()=>{
+        expect(() => sumCalculatorOnlyPositiveNumber([1, 2, -3,12,-14])).toThrow('negatives numbers are  not allowed: -3, -14');
     })
 })
 

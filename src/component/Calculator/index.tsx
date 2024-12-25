@@ -11,7 +11,7 @@ export default function Calculator() {
       const result  = stringCalculator(expression);
       setResultOfExpression(result);
     } catch (error) {
-      setIsError('Only positive number valid"');
+      setIsError(error.message);
       console.error(error);
     }
   };
@@ -32,7 +32,7 @@ export default function Calculator() {
         <button onClick={handleCalculation}>Calculate</button>
       </div>
       {isError ? (
-        <div>{isError} </div>
+        <p className='error'> {isError} </p>
       ) : (
         <div className="input-control">
           <h4>Result:</h4>

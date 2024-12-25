@@ -41,6 +41,12 @@
   h4{
     margin: 24px 0 0;
   }
+  .error{
+    color: red;
+    opacity: 0.8;
+    padding: 12px 0;
+    text-align: center;
+  }
 
   
   

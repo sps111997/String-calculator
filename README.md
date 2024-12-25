@@ -1,8 +1,13 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a react app fro string calculator.
 
-Currently, two official plugins are available:
+We have src folder, In src/utils/helper folder we have executor.ts file have three function.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Live Example](https://stellar-sherbet-45826c.netlify.app//)
+Run react app locally do following steps
+use node>=18.0.0
+npm i
+npm run start (to start a local server)
+npm run test (to run tets-cases)
+npm run build (to build production build)
